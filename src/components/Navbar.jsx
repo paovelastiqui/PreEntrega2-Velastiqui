@@ -1,4 +1,5 @@
 import { CartWidget } from './CartWidget';
+import Logo from '../assets/logo.png';
 
 export const Navbar = () => {
 
@@ -21,7 +22,7 @@ export const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src="../../public/logo.png" alt="Deco Home" />
+              <img className="h-8 w-auto" src={Logo} alt="Deco Home" />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
