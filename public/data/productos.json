@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "category": "MANTA",
+        "name": "CRUD",
+        "material": "Gasa",
+        "color": "Negro",
+        "sizes": "200cm de largo x 200cm de ancho",
+        "price": 24.999,
+        "stock": 10,
+        "img": "manta-crud.webp"
+    },
+    {
+        "id": 2,
+        "category": "MANTA",
+        "name": "YUTE",
+        "material": "Gasa Lino",
+        "color": "Beige",
+        "sizes": "200cm de largo x 200cm de ancho",
+        "price": 35.999,
+        "stock": 10,
+        "img": "manta-yute.webp"
+    },
+    {
+        "id": 3,
+        "category": "MANTA",
+        "name": "RAIS",
+        "material": "Algodon",
+        "color": "Gris",
+        "sizes": "200cm de largo x 200cm de ancho",
+        "price": 39.999,
+        "stock": 10,
+        "img": "manta-rais.webp"
+    },
+    {
+        "id": 4,
+        "category": "ALFOMBRA",
+        "name": "RIBERA",
+        "material": "Yute",
+        "color": "Natural",
+        "sizes": "150cm de largo x 80cm de ancho",
+        "price": 129.999,
+        "stock": 10,
+        "img": "alfombra-ribera.webp"
+    },
+    {
+        "id": 5,
+        "category": "ALFOMBRA",
+        "name": "ROMBOS",
+        "material": "Algodon",
+        "color": "Natural",
+        "sizes": "100cm de largo x 60cm de ancho",
+        "price": 17.999,
+        "stock": 10,
+        "img": "alfombra-ribera.webp"
+    },
+    {
+        "id": 6,
+        "category": "ALFOMBRA",
+        "name": "GUSHI",
+        "material": "Algodon",
+        "color": "Natural",
+        "sizes": "100cm de largo x 60cm de ancho",
+        "price": 17.999,
+        "stock": 10,
+        "img": "alfombra-gushi.webp"
+    },
+    {
+        "id": 7,
+        "category": "ALMOHADON",
+        "name": "CRUZ",
+        "material": "Vellón Siliconado",
+        "color": "Beige",
+        "sizes": "40cm de largo x 40cm de ancho",
+        "price": 18.999,
+        "stock": 10,
+        "img": "almohadon-cruz.webp"
+    },
+    {
+        "id": 7,
+        "category": "ALMOHADON",
+        "name": "FLECOS",
+        "material": "Vellón Siliconado",
+        "color": "Verde",
+        "sizes": "50cm de largo x 50cm de ancho",
+        "price": 21.999,
+        "stock": 10,
+        "img": "almohadon-flecos.webp"
+    },
+    {
+        "id": 7,
+        "category": "ALMOHADON",
+        "name": "RAY",
+        "material": "Vellón Siliconado",
+        "color": "Marrón",
+        "sizes": "40cm de largo x 40cm de ancho",
+        "price": 18.999,
+        "stock": 10,
+        "img": "almohadon-ray.webp"
+    }
+]

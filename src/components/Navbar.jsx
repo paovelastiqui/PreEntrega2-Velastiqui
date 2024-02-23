@@ -1,7 +1,11 @@
 import { CartWidget } from './CartWidget';
+import { Categories } from './Categories';
 import Logo from '../assets/logo.png';
+import { useState } from 'react';
 
 export const Navbar = () => {
+
+  const [menuMob, setMenuMob] = useState(true);
 
   return (
     <nav className="bg-stone-50">
@@ -9,14 +13,9 @@ export const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
            
-            <button id="menuButton" type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-neutral-950 hover:bg-stone-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
+            <button id="menuButton" type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-neutral-950 hover:bg-stone-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onClick={() => setMenuMob(!menuMob)}>
               <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"  aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
@@ -26,18 +25,7 @@ export const Navbar = () => {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                  Inicio
-                </a>
-                <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                  Productos
-                </a>
-                <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                  FAQs
-                </a>
-                <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                  Contacto
-                </a>
+                <Categories />
               </div>
             </div>
           </div>
@@ -49,22 +37,15 @@ export const Navbar = () => {
         </div>
       </div>
       
+      {menuMob ? (
+        <div className="hidden"></div>
+      ) : (
       <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            Inicio
-          </a>
-          <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            Productos
-          </a>
-          <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            FAQs
-          </a>
-          <a href="#" className="text-neutral-950 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            Contacto
-          </a>
+          <Categories />
         </div>
       </div>
+      )}
     </nav>
   )
 }
