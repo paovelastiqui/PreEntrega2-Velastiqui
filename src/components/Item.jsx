@@ -4,7 +4,7 @@ export const Item = ({ product }) => {
     return (
         <Link to={`/product/${product.id}`}>
             <div className="max-w-xs mx-auto bg-gray-200 p-3 rounded-md shadow-md mt-2">
-                <img src={`./img/${product.img}`} alt={product.name} className="rounded-md shadow-md" />
+                <img src={`${product.img}`} alt={product.name} className="rounded-md shadow-md" />
                 <h2 className="text-lg font-semibold mt-2 mb-2">{product.category} {product.name}</h2>
                 <p className="text-gray-700 mb-2">Color: {product.color}</p>
                 <p className="text-gray-700 mb-2">Material: {product.material}</p>
