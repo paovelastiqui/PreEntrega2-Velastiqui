@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 export const Categories = () => {
-
     const [nesting, setNesting] = useState(true);
 
     return (
@@ -13,7 +12,6 @@ export const Categories = () => {
                         Inicio
                     </button>
                 </Link>
-
             </li>
             <li className="text-white list-none">
                 <Link to={'/product'}>

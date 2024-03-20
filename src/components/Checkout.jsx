@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useCarritoContext } from '../context/CartContext.jsx'
+import { useCarritoContext } from '../context/CartContext'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from '../firebase/firebase.js'
@@ -41,6 +41,7 @@ export const Checkout = () => {
         })
 
         //Generar la orden de Compra
+        
         const aux2 = aux.map(prod => ({ id: prod.id, quantity: prod.quantity, price: prod.price }))
 
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleDateString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
